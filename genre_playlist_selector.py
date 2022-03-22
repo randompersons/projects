@@ -8,8 +8,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 import pandas as pd
 
-cid = '4e0eba88924849ddbc5d483b88b6a148'
-secret = '6fe0b68727fb41daa2e13aaa1e4e48ed'
+cid = ''
+secret = ''
 
 username = "xsd7gkl0pozddzfnblvhvg4lk"
 scope = "user-modify-playback-state"
