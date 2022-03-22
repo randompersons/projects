@@ -4,8 +4,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 import pandas as pd
 
-cid = '0ca650860df74c44bfc784e84ef95840'
-secret = '53cfd8128665499f849278cf1a9e3b2e'
+cid = ''
+secret = ''
 
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 
@@ -19,9 +19,9 @@ def call_playlist(creator, playlist_id):
     
     playlist = sp.user_playlist_tracks(creator, playlist_id)["items"]
     for track in playlist:
-        # Create empty dict
+        
         playlist_features = {}
-        # Get metadata
+        
         playlist_features["artist"] = track["track"]["album"]["artists"][0]["name"]
         playlist_features["album"] = track["track"]["album"]["name"]
         playlist_features["track_name"] = track["track"]["name"]
