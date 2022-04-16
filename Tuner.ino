@@ -1,3 +1,6 @@
+//Current code for Purdue Engineering Projects in Community Service Music Tuner. Code has been passed down through multiple teams and is currently in a testing phase 
+//with our physical model
+
 #include "arduinoFFT.h"
 #include <Audio.h>
 #include <Wire.h>
